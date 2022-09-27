@@ -34,8 +34,8 @@
 						<td><c:out value="${customer.lastName}"></c:out></td>
 						<td><c:out value="${customer.email}"></c:out></td>
 						<td>
-							<a href="update?id=${customer.id}"class="btn btn-primary btn-sm mb-3" style="margin-top: 2px;margin-bottom: 2px;">Update</a>
-							<a href="delete?id=${customer.id}" class="btn btn-primary btn-sm mb-3" style="margin-top: 2px;margin-bottom: 2px;">Delete</a>
+							<a href="update?id=${customer.id}"class="btn btn-primary btn-sm mb-3">Update</a>
+							<a href="delete?id=${customer.id}" class="btn btn-primary btn-sm mb-3" onclick="if(!(confirm('Are you sure to delete this customer?'))) return false">Delete</a>
 						</td>
 					</tr>
 				</c:forEach>
